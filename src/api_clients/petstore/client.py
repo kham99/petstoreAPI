@@ -1,8 +1,8 @@
 from typing import Optional
+from urllib.parse import urljoin
 
 from src.api_clients.petstore.constants import Route, ApiVersion
 from src.base_clients.http_client.client import HTTPClient
-from urllib.parse import urljoin
 
 
 class PetStoreAPIClient(HTTPClient):
@@ -20,7 +20,7 @@ class PetStoreAPIClient(HTTPClient):
 
     def delete_pet(self, pet_id: int | str, expected_status_code: Optional[int] = None) -> dict:
         response = self.delete(path=f"{Route.PET}/{pet_id}", expected_status_code=expected_status_code)
-        return response
+        return response.json()
 
     def update_pet(self, pet_data: dict, expected_status_code: Optional[int] = None) -> dict:
         response = self.put(path=Route.PET, json=pet_data, expected_status_code=expected_status_code)
