@@ -1,0 +1,1 @@
+{"id":99999999,"category":{"id":1,"name":"ololo"},"name":"doggie","photoUrls":[],"tags":[{"id":5,"name":"string"}],"status":"available"}
