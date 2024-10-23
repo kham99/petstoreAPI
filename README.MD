@@ -6,6 +6,7 @@
 ```bash
 pip install poetry 
 poetry install
+poetry add pytest pytest-allure faker
 ```
 
 ## Архитектура проекта
