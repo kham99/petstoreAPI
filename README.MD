@@ -1,12 +1,11 @@
 # Petstore Automation Project
 
 ## Подготовка окружения
-1. Для работы проекта нужна версия ython 3.12.0 и выше
+1. Для работы проекта нужна версия Python 3.12.0 и выше
 2. Выполнить команды последовательно:
 ```bash
 pip install poetry 
 poetry install
-poetry add pytest pytest-allure faker
 ```
 
 ## Архитектура проекта
